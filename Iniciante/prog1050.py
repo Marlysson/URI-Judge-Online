@@ -1,20 +1,16 @@
-# -*- coding:utf8 -*-
 
 ddds = {
-	61:'Brasília',
+	61:'Brasilia',
 	71:'Salvador',
-	11:'São Paulo',
+	11:'Sao Paulo',
 	21:'Rio de Janeiro',
 	32:'Juiz de Fora',
 	19:'Campinas',
-	27:'Vitória',
-	31:'Belo Horizonte',
+	27:'Vitoria',
+	31:'Belo Horizonte'
 }
 
-ddd = int(input('DDD do local: '))
+ddd = int(input())
 
-if not ddds.has_key(ddd):
-	print 'DDD não cadastrado'
-else:
-	print '\nLocal: {}'.format(ddds.get(ddd))
+print('{}'.format(ddds.get(ddd,'DDD nao cadastrado')))
 

@@ -1,6 +1,6 @@
-# -*- coding:utf8 -*-
+# -*- coding : utf8 -*-
 
-tempo_jogo = raw_input('Hora inicial e hora final: ').split()
+tempo_jogo = input('').split()
 inicio,final = [int(i) for i in tempo_jogo]
 
 if final < inicio:
@@ -10,4 +10,4 @@ elif final == inicio:
 else:
 	horas = (final - inicio)
 
-print 'O JOGO DUROU {} HORAS(S)'.format(horas)
+print('O JOGO DUROU {} HORA(S)'.format(horas))

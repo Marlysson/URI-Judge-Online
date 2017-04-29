@@ -1,14 +1,8 @@
-# -*- coding:utf8 -*-
-
-numero = int(input('Digite um número: '))
-cont_numeros = 0
+numero = int(input())
 
 if numero % 2 == 0:
-	atual = numero+1
-else:
-	atual = numero
+	numero += 1
 
-while cont_numeros != 6:
-	print atual
-	atual +=2
-	cont_numeros+=1
+for _ in range(6):
+	print(numero)
+	numero +=2

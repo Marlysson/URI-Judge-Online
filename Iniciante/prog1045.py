@@ -1,26 +1,21 @@
-# -*- coding:utf8 -*-
+# -*- coding : utf8 -*-
 
-lados = [float(i) for i in raw_input('Lados do triângulo: ').split()]
-lados.sort(reverse=True) #ordem decrescente
+lados = [float(i) for i in input('').split()]
 
-A,B,C = lados
+A,B,C = sorted(lados,reverse=True)
 
 #Classificação dos ângulos
 if A >= B + C:
-	print 'NÃO FORMA TRIÂNGULO'
-elif pow(A,2) == pow(B,2) + pow(C,2):
-	print 'TRIÂNGULO RETÂNGULO'
-elif pow(A,2) > pow(B,2) + pow(C,2):
-	print 'TRIÂNGULO OBTUSÂNGULO'
-elif pow(A,2) < pow(B,2) + pow(C,2):
-	print 'TRIÂNGULO ACUTÂNGULO'
+	print('NAO FORMA TRIANGULO')
+elif pow(A,2) == (pow(B,2) + pow(C,2)):
+	print('TRIANGULO RETANGULO')
+elif pow(A,2) > (pow(B,2) + pow(C,2)):
+	print('TRIANGULO OBTUSANGULO')
+elif pow(A,2) < (pow(B,2) + pow(C,2)):
+	print('TRIANGULO ACUTANGULO')
 
 #Classificação dos lados
 if A == B == C:
-	print 'TRIÂNGULO EQUILÁTERO'
+	print('TRIANGULO EQUILATERO')
 elif A == B or A == C or B == C:
-	print 'TRIÂNGULO ISÓCELES'
-
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+	print('TRIANGULO ISOSCELES')

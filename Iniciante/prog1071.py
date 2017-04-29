@@ -1,8 +1,5 @@
-# -*- coding:utf-8 -*-
-
-num1 = input('Primeiro número: ')
-num2 = input('Segundo número: ')
-som_impares = 0
+num1 = int(input())
+num2 = int(input())
 
 if num1 >= num2:
 	maior = num1
@@ -11,12 +8,10 @@ else:
 	maior = num2
 	menor = num1
 
-atual = menor+1
+s = 0
 
-while atual != maior:
-	if atual % 2 == 1:
-		som_impares += atual
-	atual +=1
+for num in range(menor+1,maior):
+	if num % 2 == 1:
+		s += num
 
-print som_impares
-	
+print("%d" %s)

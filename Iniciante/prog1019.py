@@ -1,4 +1,4 @@
-tempo_total = input('Quantidade de segundos: ')
+tempo_total = int(input())
 
 horas = tempo_total // 3600
 minutos = ( tempo_total - (horas * 3600) ) // 60

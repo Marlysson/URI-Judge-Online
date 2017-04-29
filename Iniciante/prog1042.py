@@ -1,6 +1,6 @@
 # -*- coding :utf8 -*-
 
-valores = raw_input('Digite os valores: ').split()
+valores = input('').split()
 maior,meio,menor = None,None,None
 
 num1,num2,num3 = [int(i) for i in valores]
@@ -30,10 +30,10 @@ else:
         meio = num2
         menor = num1
 
-print 'Ordenado:'
-print menor,'\n',meio,'\n',maior,'\n'
-
-print 'Ordem digitada'
+print(menor)
+print(meio)
+print(maior)
+print()
 for i in valores:
-    print i
+    print(i)
 

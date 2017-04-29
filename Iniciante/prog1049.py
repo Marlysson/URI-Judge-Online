@@ -25,8 +25,8 @@ dados = {
 }
 
 
-palavra1 = raw_input('1 palavra para identificar: ')
-palavra2 = raw_input('2 palavra para identificar: ')
-palavra3 = raw_input('3 palavra para identificar: ')
+palavra1 = input('')
+palavra2 = input('')
+palavra3 = input('')
 
-print 'Animal escolhido : {}'.format(dados.get(palavra1).get(palavra2).get(palavra3))
+print('{}'.format(dados.get(palavra1).get(palavra2).get(palavra3)))

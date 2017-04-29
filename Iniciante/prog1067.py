@@ -1,9 +1,8 @@
-# -*- coding:utf8 -*-
 
-numero = int(input('Digite um número: '))
+numero = int(input())
 
 def impares(x):
 	for i in range(1,x+1,2):
-		print i
-
+		print(i)
+		
 impares(numero)

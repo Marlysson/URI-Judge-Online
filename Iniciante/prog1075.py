@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
-numero = int(input('Número: '))
+N = int(input())
 
-for i in range(1,1000):
-	if i % numero == 2:
-		print i
+for num in range(1,10001):
+	if num % N == 2:
+		print(num)

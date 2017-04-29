@@ -1,25 +1,33 @@
 # -*- coding:utf-8 -*-
 
-nota_1 = float(input('Digite a nota 1: '))
-nota_2 = float(input('Digite a nota 2: '))
-nota_3 = float(input('Digite a nota 3: '))
-nota_4 = float(input('Digite a nota 4: '))
 
-media = (nota_1*2 + nota_2*3 + nota_3*4 + nota_4*1) / float(2+3+4+1)
+notas = list(map(float,input().split()))
+pesos = [2.0,3.0,4.0,1.0]
 
-print '\nMédia %.1f' % media
+soma_por_pesos = sum(nota * peso for nota , peso in zip(notas,pesos))
+media = soma_por_pesos / sum(pesos)
+
+print('Media: %.1f' % media)
 
 if media >= 7.0:
-	print 'Aluno aprovado'
+	print('Aluno aprovado.')
+
 elif media < 5.0:
-	print 'Aluno reprovado'
-elif media >= 5.0 and media <= 6.9:
-	print 'Aluno em exame'
-	exame = float(input('Nota do Exame: '))
-	media = ( exame + media ) / 2
+	print('Aluno reprovado.')
+
+elif 5.0 <= media <= 6.9:
+	
+	print('Aluno em exame.')
+
+	nota_exame = float(input())
+
+	print("Nota do exame: %.1f" %nota_exame)
+
+	media = ( nota_exame + media ) / 2
 
 	if media >= 5:
-		print 'Aluno Aprovado'
-	elif media <= 4.9:
-		print '\nAluno Reprovado'
-	print 'Média Final: %.1f' %media
+		print('Aluno aprovado.')
+	else:
+		print('Aluno reprovado.')
+
+	print('Media final: %.1f' % media)

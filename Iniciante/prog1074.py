@@ -1,21 +1,25 @@
 # -*- coding:utf8 -*-
 
-testes = int(input('Quantidade de testes: '))
+numeros = []
+testes = int(input())
 
 for i in range(testes):
-	numero = int(input('Número: '))
+	numero = int(input())
+	numeros.append(numero)
+
+for numero in numeros:
 
 	if numero == 0:
-		print 'NULL'
+		print('NULL')
 	else:
+		
 		if numero % 2 == 0:
-			print 'EVEN',
+			print('EVEN ',end="")
 		else:
-			print 'ODD',
+			print('ODD ',end="")
 			
 		if numero > 0:
-			print 'POSITIVE'
+			print('POSITIVE')
 		else:
-			print 'NEGATIVE'
-		
-
+			print('NEGATIVE')
+	

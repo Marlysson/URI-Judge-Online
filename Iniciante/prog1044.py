@@ -1,9 +1,9 @@
-# -*- coding:utf8 -*-
+# -*- coding : utf8 -*-
 
-numeros = raw_input('Digite 2 números: ').split()
+numeros = input('').split()
 A,B = [int(i) for i in numeros]
 
 if A % B == 0 or B % A == 0:
-	print 'São múltiplos'
+	print('Sao Multiplos')
 else:
-	print 'Não são múltiplos'
+	print('Nao sao Multiplos')

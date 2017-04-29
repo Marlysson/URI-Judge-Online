@@ -3,12 +3,10 @@
 numeros = []
 
 for i in range(6):
-	numeros.append(input('Numero: '))
+	numero = float(input())
+	numeros.append(numero)
 
-def positivos(x):
-	return x > 0
+positivos = [numero for numero in numeros if numero > 0]
 
-positivos = filter(positivos,numeros)
-
-print '{} valores positivos'.format(len(positivos))
-print '{}'.format(float(sum(positivos)/len(positivos))) 
+print('{} valores positivos'.format(len(positivos)))
+print('{:.1f}'.format(float(sum(positivos)/len(positivos))))

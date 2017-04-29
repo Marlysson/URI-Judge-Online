@@ -1,12 +1,11 @@
-# -*- coding:utf8 -*-
+# -*- coding : utf8 -*-
 
-numero = int(input('Número: '))
+numero = int(input())
 
 if numero % 2 == 0:
 	numero += 1
 
-quadrados = [i**2 for i in range(2,numero,2)]
-numero 	  = [i for i in range(2,numero,2)]
-
-for numero,quadrado in zip(numero,quadrados):
-	print '{}^{} = {}'.format(numero,numero,quadrado)
+for n in range(1,numero):
+	if n % 2 == 0:
+		print("{}^2 = {}".format(n,n**2))
+		
